@@ -19,7 +19,7 @@ lasso_pred = lasso.predict(X_test)
 lasso_mse = mean_squared_error(y_test, lasso_pred)
 
 # Adaptive LASSO (your algorithm)
-adaptive = AdaptiveLasso(lr=0.001, lam=8, iterations=2000)
+adaptive = AdaptiveLasso(lr=0.001, lam=10, iterations=2000)
 adaptive.fit(X_train, y_train)
 adaptive_pred = adaptive.predict(X_test)
 adaptive_mse = mean_squared_error(y_test, adaptive_pred)
